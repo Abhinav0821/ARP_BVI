@@ -1,0 +1,30 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.8, pytest-7.4.4, pluggy-1.6.0 -- /Users/abhinavkashyap/miniforge3/envs/ros_env/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/abhinavkashyap/Desktop/Github/ARP_A1/ros2_ws/src/bvi_nav
+plugins: ament_lint-0.17.3, ament_flake8-0.17.3, repeat-0.9.4, launch_testing_ros-0.26.9, ament_xmllint-0.17.3, rerunfailures-16.2, cov-7.1.0, launch_testing-3.4.8, ament_copyright-0.17.3, colcon-core-0.19.0, ament_pep257-0.17.3
+collecting ... collected 21 items
+
+test/test_bvi.py::test_map_has_exactly_180_obstacles PASSED              [  4%]
+test/test_bvi.py::test_map_is_reproducible_for_a_seed PASSED             [  9%]
+test/test_bvi.py::test_start_and_goal_are_free_distinct_and_connected PASSED [ 14%]
+test/test_bvi.py::test_goal_value_is_zero_and_start_is_finite PASSED     [ 19%]
+test/test_bvi.py::test_obstacles_keep_infinite_value PASSED              [ 23%]
+test/test_bvi.py::test_path_length_equals_value_at_start PASSED          [ 28%]
+test/test_bvi.py::test_path_is_a_legal_nsew_walk_over_free_cells PASSED  [ 33%]
+test/test_bvi.py::test_bvi_matches_a_reference_bfs PASSED                [ 38%]
+test/test_bvi.py::test_every_verification_check_passes PASSED            [ 42%]
+test/test_bvi.py::test_policy_is_defined_for_every_reachable_non_goal_cell PASSED [ 47%]
+test/test_bvi.py::test_planner_works_across_seeds[0] PASSED              [ 52%]
+test/test_bvi.py::test_planner_works_across_seeds[1] PASSED              [ 57%]
+test/test_bvi.py::test_planner_works_across_seeds[7] PASSED              [ 61%]
+test/test_bvi.py::test_planner_works_across_seeds[42] PASSED             [ 66%]
+test/test_bvi.py::test_planner_works_across_seeds[123] PASSED            [ 71%]
+test/test_bvi.py::test_planner_works_across_seeds[2024] PASSED           [ 76%]
+test/test_bvi.py::test_open_grid_value_is_manhattan_distance PASSED      [ 80%]
+test/test_bvi.py::test_unreachable_cells_stay_infinite PASSED            [ 85%]
+test/test_bvi.py::test_explicit_start_and_goal_are_honoured PASSED       [ 90%]
+test/test_bvi.py::test_obstacle_cell_rejected_as_goal PASSED             [ 95%]
+test/test_flake8.py::test_flake8 PASSED                                  [100%]
+
+============================== 21 passed in 1.35s ==============================
